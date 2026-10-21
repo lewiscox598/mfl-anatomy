@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MFL Inspection Figures</title>
+<meta name="description" content="Interactive isometric figures explaining magnetic flux leakage (MFL) in-line inspection. Illustrative, not to scale.">
+<style>
+  :root {
+    --bg: #fbfbfa; --card: #ffffff; --ink: #1a1a1a; --muted: #6b6b6b; --line: #e2e2df; --accent: #1a1a1a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #111111; --card: #181818; --ink: #ededed; --muted: #9a9a9a; --line: #2c2c2c; --accent: #ffffff; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 56px 16px 72px; }
+  .eyebrow { font: 12px/1 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--muted); margin: 0 0 14px; }
+  h1 { font-size: clamp(32px, 6vw, 52px); line-height: 1.05; letter-spacing: -.02em; margin: 0 0 16px; }
+  .lede { color: var(--muted); max-width: 60ch; margin: 0 0 40px; }
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 22px; }
+  .card h2 { font-size: 20px; margin: 0 0 6px; }
+  .card p { color: var(--muted); margin: 0 0 16px; font-size: 15px; }
+  .links { display: flex; flex-wrap: wrap; gap: 8px; }
+  .links a { font: 13px/1 ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--ink); text-decoration: none;
+    border: 1px solid var(--line); border-radius: 999px; padding: 9px 13px; }
+  .links a:hover, .links a:focus-visible { border-color: var(--accent); outline: none; }
+  .links a.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  footer { margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Magnetic flux leakage · in-line inspection</p>
+  <h1>How a tool inside a pipe finds lost metal</h1>
+  <p class="lede">Two interactive isometric figures. Drag the tool sideways, or leave it to play its tour. Where the pipe wall is thinner, magnetic flux leaks out of the steel, and a ring of sensors riding the wall reads it.</p>
+
+  <div class="grid">
+    <section class="card">
+      <h2>Pipeline run</h2>
+      <p>The tool is launched from a trap, runs four welded spools under a road and is caught in the receiver. Welds and three kinds of metal loss build up on an eight-row record.</p>
+      <div class="links">
+        <a class="primary" href="pipeline.html">Open (dark)</a>
+        <a href="pipeline-light.html">Light</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Single spool</h2>
+      <p>The tool on its own in a cut-away test spool: magnets, brushes, the sensor ring and the leak at one external pit.</p>
+      <div class="links">
+        <a class="primary" href="mfl-tool.html">Open (dark)</a>
+        <a href="mfl-tool-light.html">Light</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>A4 sheets</h2>
+      <p>Printable versions of the pipeline run.</p>
+      <div class="links">
+        <a href="pdf/pipeline-poster-a4.pdf">Poster</a>
+        <a href="pdf/pipeline-drawing-a4.pdf">Drawing</a>
+        <a href="pdf/pipeline-detailed-a4.pdf">Handout</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>Illustrative, not to scale. The figures show the principle only: no sizes, depths or severities, and the record has no units.</footer>
+</main>
+</body>
+</html>
